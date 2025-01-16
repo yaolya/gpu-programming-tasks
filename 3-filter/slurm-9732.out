@@ -1,0 +1,5 @@
+g++ -O3 -march=native -fopenmp main.cc -lOpenCL -o build/3-filter
+Platform name: NVIDIA CUDA
+Device name: NVIDIA GeForce GTX 1060 6GB
+           function              OpenMP        OpenCL total      OpenCL copy-in       OpenCL kernel     OpenCL copy-out
+             filter              6689us              8581us              4174us              1145us              3262us

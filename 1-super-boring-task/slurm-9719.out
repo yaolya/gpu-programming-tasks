@@ -1,0 +1,7 @@
+g++ -O3 -march=native -fopenmp main.cc -lOpenCL -o build/1-super-boring-task
+Platform name: NVIDIA CUDA
+Device name: NVIDIA GeForce GTX 1060 6GB
+           function              OpenMP        OpenCL total      OpenCL copy-in       OpenCL kernel     OpenCL copy-out    OpenMP bandwidth    OpenCL bandwidth
+vector-times-vector             14391us            108094us             76600us               311us             31182us         26.2308GB/s         1213.79GB/s
+matrix-times-vector             46403us            392246us            377837us                25us             14383us         27.1219GB/s         50341.5GB/s
+matrix-times-matrix           1436783us             16710us              8546us              5030us              3133us       0.0262731GB/s         7.50472GB/s

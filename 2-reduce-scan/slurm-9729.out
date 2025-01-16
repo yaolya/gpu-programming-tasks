@@ -1,0 +1,7 @@
+g++ -O3 -march=native -fopenmp main.cc -lOpenCL -o build/2-reduce-scan
+Platform name: NVIDIA CUDA
+Device name: NVIDIA GeForce GTX 1060 6GB
+Abs difference (cpu vs gpu): 73.5
+           function              OpenMP        OpenCL total      OpenCL copy-in       OpenCL kernel     OpenCL copy-out    OpenMP bandwidth    OpenCL bandwidth
+             reduce              4583us             41164us             38341us              1841us               981us         54.9112GB/s         136.696GB/s
+     scan-inclusive             12592us             69390us             38390us             17439us             13560us               0GB/s               0GB/s
